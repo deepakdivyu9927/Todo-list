@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lekton", Arial, Helvetica, sans-serif;
+  /* background-color: #ffffff; */
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px rgb(183, 14, 34);
+  padding: 15px;
+  border-radius: 10px;
+  width: 600px;
+}
+body {
+  background-image: url('https://thumbs.dreamstime.com/z/empty-to-do-list-computer-keyboard-wooden-background-150125448.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.input-container {
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container > h1 {
+  font-family: "Alike", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #0d2a40;
+  margin-left: 222px;
+}
+
+.input-container > p {
+  font-family: "Alike", sans-serif;
+  font-size: 18px;
+  color: #092134;
+}
+
+
+.title_input,
+.due_input,
+.status_input {
+  height: 35px;
+  margin-bottom: 15px;
+}
+
+.due_input,
+.status_input {
+  width: 120px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.title_input {
+  font-size: 16px;
+  height: 45px;  
+  font-weight: bold;
+}
+.title_input:hover {
+  font-size: 16px;
+  height: 45px;
+  background-color: lightgray;
+  color: black;
+}
+.desc_input {
+  height: 60px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  
+}
+.desc_input:hover {
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: lightgray;
+  color: black;
+}
+
+
+.status_input {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 8px;
+  font-family: inherit;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  height: 150px;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.add_btn {
+  background-color: #99d98c;
+}
+
+.add_btn:hover {
+  box-shadow: 4px 4px #34a0a4;
+}
+
+.clear_btn:hover {
+  box-shadow: 4px 4px rgb(225, 185, 185);
+}
+
+.clear_btn {
+  background-color: #e85d04;
+}
+
+.picker_input {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+}
+#status:hover{
+  background-color: rgb(96, 223, 223);
+}
+#dueDate:hover{
+  background-color: lightcoral;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
+    align-items: center;
+  }
+  .top-container {
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px auto;
+    width: 450px;
+  }
+  .btn-container {
+    flex-direction: row;
+  }
+  .table {
+    width: 100%;
+  }
+}
